@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CultureCast - Microbiology Trends</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CultureCast</h1>
+  <nav>
+    <a href="#trending">Trending</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#data">Data</a>
+    <a href="#" id="admin-btn">Admin</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Stay Ahead in Microbiology</h2>
+  <p>Your source for the latest research, lab tutorials, and data insights in the world of microbiology.</p>
+</section>
+
+<section id="trending">
+  <h2 class="section-title">Trending News</h2>
+  <div class="card-container" id="trending-cards"></div>
+</section>
+
+<section id="tutorials">
+  <h2 class="section-title">Lab Tutorials & How-To</h2>
+  <div class="card-container" id="tutorial-cards"></div>
+</section>
+
+<section id="data">
+  <h2 class="section-title">Data Visualizations</h2>
+  <canvas id="dataChart" width="400" height="200"></canvas>
+</section>
+
+<section class="newsletter">
+  <h2>Subscribe to CultureCast</h2>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+<!-- Admin Modal -->
+<div class="modal" id="adminModal">
+  <div class="modal-content">
+    <h3>Admin Login</h3>
+    <input type="password" id="adminPass" placeholder="Enter password">
+    <button id="loginBtn">Login</button>
+    <p id="loginError" style="color:red;"></p>
+    <div id="adminPanel" style="display:none;">
+      <h4>Edit Posts</h4>
+      <div id="adminPosts"></div>
+      <button id="exportJsonBtn">Export JSON</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 CultureCast | Follow on <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
